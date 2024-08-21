@@ -9,16 +9,19 @@ There are three functions, each improving on the former in simplicity and readab
 ### Noob
 
 The worst version. This contains place holder logic to avoid inner `[]` from interfering during Url replacement.
+
 [noob_replace() = 50 lines](https://github.com/Jaxsbr/python-regex-escape/blob/main/pythonregexescape/main.py#L32-L81)
 
 ### Regex
 
 This is much cleaner/shorter than [Noob](#noob), and uses complex regex patterns to escape the names during Url replacement.
+
 [regex_replace() = 11 lines](https://github.com/Jaxsbr/python-regex-escape/blob/main/pythonregexescape/main.py#L84-L95)
 
 ### Simple
 
 This is even more compact and readable and improves further on [Regex](#regex). The complexity of regex is foregone, and a simple dictionary key iteration and direct replace is used instead.
+
 [simple_replace() = 7 lines](https://github.com/Jaxsbr/python-regex-escape/blob/main/pythonregexescape/main.py#L98-L103)
 
 ## Problem
